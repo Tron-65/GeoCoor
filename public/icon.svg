@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Rounded Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#334155" stroke-width="3" opacity="0.6" />
+
+  <!-- Geodetic Coordinate Grid Lines (Sahara / Lambert UTM Graticule) -->
+  <g stroke="#38bdf8" stroke-width="1.5" opacity="0.2">
+    <line x1="64" y1="128" x2="448" y2="128" />
+    <line x1="64" y1="192" x2="448" y2="192" />
+    <line x1="64" y1="256" x2="448" y2="256" stroke="#fbbf24" stroke-width="2" opacity="0.4" stroke-dasharray="6,4" />
+    <line x1="64" y1="320" x2="448" y2="320" />
+    <line x1="64" y1="384" x2="448" y2="384" />
+
+    <line x1="128" y1="64" x2="128" y2="448" />
+    <line x1="192" y1="64" x2="192" y2="448" />
+    <line x1="256" y1="64" x2="256" y2="448" stroke="#fbbf24" stroke-width="2" opacity="0.4" stroke-dasharray="6,4" />
+    <line x1="320" y1="64" x2="320" y2="448" />
+    <line x1="384" y1="64" x2="384" y2="448" />
+  </g>
+
+  <!-- Concentric Range Rings / Target Reticle -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="10,6" opacity="0.5" />
+  <circle cx="256" cy="256" r="100" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4" />
+  <circle cx="256" cy="256" r="40" fill="none" stroke="#fbbf24" stroke-width="2.5" />
+
+  <!-- Central Crosshair Pin -->
+  <line x1="256" y1="80" x2="256" y2="432" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+  <line x1="80" y1="256" x2="432" y2="256" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Compass Star Points -->
+  <polygon points="256,120 268,230 256,215 244,230" fill="url(#goldGrad)" />
+  <polygon points="256,392 268,282 256,297 244,282" fill="#64748b" />
+  <polygon points="120,256 230,244 215,256 230,268" fill="#64748b" />
+  <polygon points="392,256 282,244 297,256 282,268" fill="#64748b" />
+
+  <!-- Center Datum Marker -->
+  <circle cx="256" cy="256" r="10" fill="#f59e0b" />
+  <circle cx="256" cy="256" r="4" fill="#ffffff" />
+
+  <!-- Algeria Map Silhouette Accent / Sahara Emblem -->
+  <path d="M 190,170 Q 240,150 310,165 Q 340,210 320,280 Q 280,360 250,370 Q 200,320 180,240 Z" fill="none" stroke="#10b981" stroke-width="4" stroke-linejoin="round" opacity="0.85" />
+
+  <!-- Text / Badge -->
+  <text x="256" y="475" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="28" fill="#f8fafc" letter-spacing="4">GEOFREE DZ</text>
+</svg>

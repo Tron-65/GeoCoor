@@ -1,0 +1,6 @@
+{
+  "name": "GeoFree Algeria - Sahara Geodetic Coordinate Converter & Field GIS",
+  "description": "Professional geodetic coordinate converter and field GIS for Algeria and the Sahara. Converts WGS84, UTM, Nord Sahara 1959, and Lambert Conformal Conic projections with offline Sahara field support, batch GPS processing, boundary mapping, and CSV/KML export.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
